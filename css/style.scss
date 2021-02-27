@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Recursive', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to right, #3c3b3f, #605c3c);
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h1 {
+            font-size: 2vw;
+            margin: 0.5rem;
+        }
+        p {
+            font-size: 1.5vw;
+        }
+    }
+    .container {
+        box-shadow: #fff 0 5px 10px 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        header {
+            margin: 1rem; 
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            label {
+                font-size: 2vw;
+            }
+            input {
+                margin-top: 1rem;
+                font-size: 2vw;
+                color: #3c3b3f;
+                background: #fff;
+            }
+        }
+        .time-left {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            margin: 2rem;
+            flex-wrap: wrap;
+            div {
+                display: flex;
+                flex-direction: column;
+                p{
+                    font-size: 4vw;
+                }
+                span {
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+    footer {
+        a {
+            text-decoration: none;
+            color: bisque;
+            &:hover, &:focus {
+                color: rgb(144, 161, 161);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        nav {
+            min-height: 15vh;
+            h1 {
+                font-size: 5vw;
+            }
+            p {
+                font-size: 3vw;
+            }
+        }
+        .container {
+            min-height: 60vh;
+            header {
+                width: 100%;
+                label {
+                    font-size: 4vw;
+                }
+                input {
+                    font-size: 6vw;
+                }
+            }
+            .time-left {
+                flex-wrap: wrap;
+                div {
+                    p{
+                        font-size: 10vw;
+                    }
+                    span{
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+        footer {
+            padding: 2rem;
+        }
+    }
+}
